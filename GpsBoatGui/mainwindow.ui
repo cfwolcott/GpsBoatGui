@@ -150,6 +150,19 @@
       <string>Servo Right</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton_ServoCenter">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>50</y>
+       <width>91</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Servo Center</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">

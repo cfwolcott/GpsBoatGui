@@ -26,6 +26,8 @@ private slots:
 
     void on_pushButton_ServoRight_clicked();
 
+    void on_pushButton_ServoCenter_clicked();
+
 private:
     Ui::MainWindow *ui;
 

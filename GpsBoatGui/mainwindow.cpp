@@ -122,6 +122,12 @@ void MainWindow::on_pushButton_ServoRight_clicked()
 }
 
 //-----------------------------------------------------------------------------
+void MainWindow::on_pushButton_ServoCenter_clicked()
+{
+   cArduino.SetReg( ARDUINO_REG_STEERING, 127);
+}
+
+//-----------------------------------------------------------------------------
 void MainWindow::on_pushButton_Ard_ToggleLed_clicked()
 {
     static int toggle = 0;
@@ -168,7 +174,10 @@ PI_THREAD (THREAD_UpdateGps )
     bool bNewGpsData = false;
     unsigned long fix_age;
     //int year;
-    //U8 month, day, hundredths;
+    //U8 month, day, hundredths;void MainWindow::on_pushButton_ServoCenter_clicked()
+    {
+
+    }
 
     // GPS
     TinyGPS cGps;
@@ -237,6 +246,8 @@ PI_THREAD (THREAD_UpdateGps )
     }
     return 0;
 }
+
+
 
 
 
